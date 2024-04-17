@@ -6,18 +6,36 @@
             "id": "0e405048-70f0-481e-ac00-7a7814b4b8c9",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
+                    "name": "MoveForward",
+                    "type": "Value",
                     "id": "927d0f72-7b58-4b34-aa78-4223efb6e3bf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "13e25c00-d7c5-4644-b2cb-275a5192398f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "New action1",
+                    "name": "Attack1",
                     "type": "Button",
-                    "id": "13e25c00-d7c5-4644-b2cb-275a5192398f",
+                    "id": "d339fd6a-abcf-4bcc-8eeb-49f3260b47d5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack2",
+                    "type": "Button",
+                    "id": "d3fc5ed8-0645-44db-b2a4-512d5035037b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -26,24 +44,90 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "3b1563a4-4ea2-47db-a1dc-afca6ed7dc2d",
-                    "path": "",
+                    "name": "1D Axis",
+                    "id": "79957b42-69f1-4b85-a943-47d4ee2fd15c",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "MoveForward",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0ecf279f-de37-41fd-aa29-6d2b52c7e41d",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "63d38821-a049-4b50-a2d2-d72d9276dc0f",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "86d4186a-41f4-4818-9afb-460731bc0725",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "6bf4b533-211a-4b7c-b39d-96da4c9f1d39",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "2c87fdd2-6742-4772-a6d8-52803d733048",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b433f926-22ad-45d9-8ca8-f9405a9a35af",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "7a515ad6-fa6e-4dfe-bbef-b38651306711",
-                    "path": "",
+                    "id": "4efe2751-f5c5-44c5-8955-47387f1f95de",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KM",
-                    "action": "New action1",
+                    "groups": "",
+                    "action": "Attack2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

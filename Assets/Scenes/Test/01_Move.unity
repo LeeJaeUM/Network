@@ -1329,11 +1329,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6818738291759060355, guid: 8f9f35d469eb2f045aae86cac36f0380,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3976e2ebe19de1a46a8f07a8c0b70aff, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 681801960600191166, guid: 8f9f35d469eb2f045aae86cac36f0380,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5901856648465286483}
   m_SourcePrefab: {fileID: 100100000, guid: 8f9f35d469eb2f045aae86cac36f0380, type: 3}
+--- !u!1 &5901856648465286482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 681801960600191166, guid: 8f9f35d469eb2f045aae86cac36f0380,
+    type: 3}
+  m_PrefabInstance: {fileID: 5901856648465286481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5901856648465286483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5901856648465286482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb9b55fd26126048b4c1162f7c9f460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3.5
+  rotateSpeed: 90
 --- !u!4 &8338988565591873055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1973177761292466389, guid: 8f9f35d469eb2f045aae86cac36f0380,
