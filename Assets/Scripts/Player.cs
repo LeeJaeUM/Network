@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
         Idle,
         Walk,
         BackWalk,
+        Attack1,
+        Attack2,
         None
     }
 
@@ -60,6 +62,19 @@ public class Player : MonoBehaviour
         inputActions.Player.MoveForward.canceled += OnMoveInput;
         inputActions.Player.Rotate.performed += OnRotate;
         inputActions.Player.Rotate.canceled += OnRotate;
+        inputActions.Player.Attack1.performed += OnAttack1;
+        inputActions.Player.Attack2.performed += OnAttack2;
+    }
+
+    private void OnAttack1(InputAction.CallbackContext context)
+    {
+        State = AnimationState.Attack1;
+        //animator.ResetTrigger(AnimationState.Idle.ToString());
+    }
+
+    private void OnAttack2(InputAction.CallbackContext context)
+    {
+        State = AnimationState.Attack2;
     }
 
     private void OnDisable()
